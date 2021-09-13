@@ -65,7 +65,7 @@ project
 - Easy to use functions.
 
 ## EmailJS
-- Link to cancel booking is: http://localhost:3000/cancellation/<YourBookingRefrence>
+- Link to cancel booking is: http://localhost:3000/cancellation/YourBookingRefrence
 - To use this feature you have to use port 3000.
 
 ## Running Tests
