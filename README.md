@@ -5,7 +5,7 @@ This is a school assignment where we were assignt to create a resturant page wit
 ## How to get started
 
 1.  run `git clone https://github.com/PegJac/Restaurant.git`
-2.  run `npm intall` to insta node modules and all the npm packages we chosen to use in this project.
+2.  run `npm intall` to install node modules and all the npm packages we've chosen to use in this project.
 3.  run `npm start`
 
 ## File Structure
@@ -65,7 +65,7 @@ project
 - Easy to use functions.
 
 ## EmailJS
-- Link to cancel booking is: http://localhost:3000/cancellation/%7B%7Bbooking_reference%7D%7D
+- Link to cancel booking is: http://localhost:3000/cancellation/<YourBookingRefrence>
 - To use this feature you have to use port 3000.
 
 ## Running Tests
