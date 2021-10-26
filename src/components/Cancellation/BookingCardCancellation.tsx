@@ -4,7 +4,7 @@ import CardContent from "@material-ui/core/CardContent";
 import { IBookingState } from "../../models/IBookingState";
 import Divider from "@material-ui/core/Divider";
 import { Link } from "react-router-dom";
-import { Edit, Delete } from "@material-ui/icons";
+import { Delete } from "@material-ui/icons";
 import { randomIndexGen } from "../../utils/randomIndexGen";
 import { DialogBox } from "../Admin/ChildComponents/DialogBox";
 import { Button } from "@material-ui/core";
@@ -105,6 +105,7 @@ export default function BookingCardCancellation({ bookingObj }: IBookingCard) {
               >
                 <div className="edit-inner delete">
                   <Delete style={{ color: "#FF7B51" }} />
+                  <p>Cancel</p>
                   <p>Cancel</p>
                 </div>
               </Button>

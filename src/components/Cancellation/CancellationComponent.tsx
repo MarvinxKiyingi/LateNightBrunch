@@ -2,10 +2,10 @@
 import firebase from "firebase";
 import { useEffect, useState } from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
-import { Redirect, useParams } from "react-router";
+import { useParams } from "react-router";
 import { db } from "../../firebase";
 import { IBookingState } from "../../models/IBookingState";
-import { sendEmailCancellation } from "../../utils/emailSendOut";
+// import { sendEmailCancellation } from "../../utils/emailSendOut";
 import BookingCardCancellation from "./BookingCardCancellation";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ function CancellationComponent() {
     idField: "id",
   });
 
-  const [redirect, setRedirect] = useState(false);
+  // const [redirect, setRedirect] = useState(false);
 
   interface IParams {
     bookingReference: string;
@@ -38,15 +38,15 @@ function CancellationComponent() {
   }, [snapshot]);
 
   //delete document, send email, redirect to confirmation
-  function deleteBooking() {
-    db.collection("bookings").doc(data?.id).delete();
-    sendEmailCancellation(data as IBookingState);
-    setRedirect(true);
-  }
+  // function deleteBooking() {
+  //   db.collection("bookings").doc(data?.id).delete();
+  //   sendEmailCancellation(data as IBookingState);
+  //   setRedirect(true);
+  // }
 
-  if (redirect) {
-    return <Redirect to="/confirmCancellation" />;
-  }
+  // if (redirect) {
+  //   return <Redirect to="/confirmCancellation" />;
+  // }
 
   return (
     <div className="cancellationWrapper">
