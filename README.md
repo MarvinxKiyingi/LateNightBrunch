@@ -5,7 +5,7 @@ This is a school assignment where we were assignt to create a resturant page wit
 ## How to get started
 
 1.  run `git clone https://github.com/PegJac/Restaurant.git`
-2.  run `npm intall` to insta node modules and all the npm packages we chosen to use in this project.
+2.  run `npm intall` to install node modules and all the npm packages we've chosen to use in this project.
 3.  run `npm start`
 
 ## File Structure
@@ -40,10 +40,6 @@ For this project we decided on this file structure.
 
 - Houses most of our function to keep a tidy code
 
-#### Firebase (db)
-
-- This is where we inistiate our chosen database that we use throughout the whole application
-
 ```bash
 project
 │   README.md
@@ -64,11 +60,12 @@ project
 ```
 
 ## Firebase/Firestore
+- This is where we inistiate our chosen database that we use throughout the whole application
 - We use firebase hooks to minimize the amount of backend code. Firebase hooks can handle state, update dynamically on database changes in real time. 
 - Easy to use functions.
-- 
+
 ## EmailJS
-- Link to cancel booking is: http://localhost:3000/cancellation/%7B%7Bbooking_reference%7D%7D
+- Link to cancel booking is: http://localhost:3000/cancellation/YourBookingRefrence
 - To use this feature you have to use port 3000.
 
 ## Running Tests

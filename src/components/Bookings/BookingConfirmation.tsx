@@ -26,7 +26,7 @@ export const BookingConfirmation = () => {
 
       <div className="bookingConfirmation-container">
         <h1>Thanks for your booking</h1>
-        <p>Be sure to check your email for confirmation</p>
+        <p>Be sure to check your email for a confirmation</p>
       </div>
     </div>
   );
