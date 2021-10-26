@@ -106,7 +106,6 @@ export default function BookingCardCancellation({ bookingObj }: IBookingCard) {
                 <div className="edit-inner delete">
                   <Delete style={{ color: "#FF7B51" }} />
                   <p>Cancel</p>
-                  <p>Cancel</p>
                 </div>
               </Button>
             </div>
