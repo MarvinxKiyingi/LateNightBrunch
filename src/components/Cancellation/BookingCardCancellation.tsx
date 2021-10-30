@@ -9,12 +9,14 @@ import { randomIndexGen } from "../../utils/randomIndexGen";
 import { DialogBox } from "../Admin/ChildComponents/DialogBox";
 import { Button } from "@material-ui/core";
 import { deleteBookingAndSendConfirmation } from "../../utils/deleteBookingFromDB";
+import { useHistory } from "react-router";
 
 interface IBookingCard {
   bookingObj: IBookingState;
 }
 
 export default function BookingCardCancellation({ bookingObj }: IBookingCard) {
+  let history = useHistory();
   const [dialogBoxOpen, setDialogBoxOpen] = useState(false);
 
   const foodEmojis = [
@@ -55,6 +57,7 @@ export default function BookingCardCancellation({ bookingObj }: IBookingCard) {
   const deleteBookingFromDB = (): void => {
     deleteBookingAndSendConfirmation(bookingObj);
     toggleDialogBox();
+    history.push("/confirmCancellation");
   };
 
   return (
